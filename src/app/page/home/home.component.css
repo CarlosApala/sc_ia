@@ -1,0 +1,117 @@
+.col-7 img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina el espacio blanco debajo de la imagen */
+}
+
+.primercard {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home {
+  margin: 0;
+}
+
+.blob {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.blob > img {
+  max-width: 600px;
+  width: 100%;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center center;
+  border-radius: 20px;
+
+  margin: 20px;
+  animation: animate 10s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  height: 90vh;
+  overflow: auto;
+  flex-direction: row;
+}
+.FlexContainer > .flex-blob {
+  width: 40%;
+
+  margin: 5px;
+}
+/* Media query para ajustar en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column; /* Cambia la dirección a columnas */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+  .map-container {
+    margin-top: 0; /* Quita el margen superior en modo columna */
+  }
+
+  /* Ajustes específicos para el iframe */
+  .map-container iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    min-width: initial; /* Quita el ancho mínimo */
+    border-radius: 5%; /* Mantiene el radio de borde si es necesario */
+    margin-top: 10px; /* Espacio superior opcional */
+  }
+}
+#contacto-section {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los divs se envuelvan si el espacio es insuficiente */
+  gap: 20px; /* Espacio entre los divs */
+  height: 90vh;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column; /* Cambia la dirección a columnas */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  #contacto-section {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .col-7 {
+    overflow: hidden;
+  }
+  .col-7 img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Para evitar espacios debajo de la imagen */
+  }
+  img {
+    border-radius: 10px;
+  }
+  .col-5 {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .map-container {
+    margin-top: 0; /* Quita el margen superior en modo columna */
+  }
+
+  /* Ajustes específicos para el iframe */
+  .map-container iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    min-width: initial; /* Quita el ancho mínimo */
+    border-radius: 5%; /* Mantiene el radio de borde si es necesario */
+    margin-top: 10px; /* Espacio superior opcional */
+  }
+}

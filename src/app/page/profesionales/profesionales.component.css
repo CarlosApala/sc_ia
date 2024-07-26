@@ -1,0 +1,22 @@
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-content: flex-start;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  overflow: auto;
+  flex-direction: row;
+}
+
+.FlexContainer > .box {
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+  background-color: lightblue;
+}
+.card-title,
+.card-subtitle,
+.card-text {
+  color: #265073;
+}

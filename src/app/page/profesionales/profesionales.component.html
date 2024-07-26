@@ -1,0 +1,39 @@
+<div style="height: 90vh">
+  <div class="text-center" style="padding-top: 10vh">
+    <h1>Nuestros Profesionales</h1>
+  </div>
+  <hr />
+  <div class="FlexContainer">
+    @for (pro of professionals; track $index) {
+    <div
+      class="card m-3"
+      style="width: 18rem; background: var(--main-background-inverse)"
+    >
+      <img src="./assets/img/R.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h2>
+          {{ pro.name }}
+        </h2>
+        <h5>
+          {{ pro.degree }}
+        </h5>
+        <p style="color: white">
+          {{ pro.description }}
+        </p>
+        <a
+          [href]="pro.link"
+          class="btn"
+          style="
+            font-family: Bogart Light;
+            width: 100%;
+            background: white;
+            color: #265073;
+            font-weight: bold;
+          "
+          >Mas...</a
+        >
+      </div>
+    </div>
+    }
+  </div>
+</div>

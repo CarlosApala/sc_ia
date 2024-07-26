@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-header {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.profile-description {
+  font-style: italic;
+  color: #666;
+}
+
+.contact-info,
+.experience,
+.education,
+.skills,
+.certifications,
+.languages {
+  margin-bottom: 20px;
+}
+
+.contact-info a,
+.contact-info p {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.experience-item,
+.certification-item,
+.language-item {
+  margin-bottom: 10px;
+}
+
+.experience-item ul,
+.skills ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-item li,
+.skills li {
+  margin-bottom: 5px;
+}
+
+.skills ul {
+  padding-left: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.certifications h3,
+.languages .language-item p {
+  margin: 0;
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Juan Pérez González",
+    "contact": {
+      "email": "correo@ejemplo.com",
+      "phone": "Teléfono",
+      "linkedin": "linkedin.com/in/juanperez"
+    },
+    "profile": "Ingeniero en Sistemas con experiencia en desarrollo de aplicaciones web y móviles, especializado en tecnologías front-end y back-end.",
+    "experience": [
+      {
+        "title": "Desarrollador Full Stack",
+        "company": "Tech Innovators Inc.",
+        "startDate": "Enero 2020",
+        "endDate": "Actualidad",
+        "responsibilities": [
+          "Desarrollé una aplicación web usando React y Node.js.",
+          "Implementé CI/CD con Jenkins y Docker."
+        ]
+      },
+      {
+        "title": "Analista de Sistemas",
+        "company": "Solutions Ltd.",
+        "startDate": "Junio 2017",
+        "endDate": "Diciembre 2019",
+        "responsibilities": [
+          "Realicé análisis de requisitos y diseñé soluciones en Python y PostgreSQL."
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Licenciatura en Ingeniería en Sistemas",
+      "institution": "Universidad de Buenos Aires",
+      "graduationYear": "2017"
+    },
+    "skills": [
+      "Java",
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Django",
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "certifications": [
+      {
+        "title": "Certificación en Desarrollo de Aplicaciones Web",
+        "institution": "Udemy",
+        "year": "2019"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Inglés",
+        "level": "Avanzado"
+      },
+      {
+        "language": "Español",
+        "level": "Nativo"
+      }
+    ]
+  }
+
+]

@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-background: radial-gradient(
+    circle,
+    rgba(45, 149, 150, 1) 0%,
+    rgba(38, 80, 115, 1) 100%
+  );
+  --main-background-inverse: linear-gradient(
+    45deg,
+    rgba(38, 80, 115, 1) 5%,
+    rgba(42, 118, 134, 1) 50%,
+    rgba(38, 80, 115, 1) 95%
+  );
+}
+@font-face {
+  font-family: "Bogart Regular"; /* Nombre de la fuente que usarás en CSS */
+  src: url("/assets/font/bogart/Bogart-Regular-trial.ttf") format("truetype");
+  font-weight: normal; /* Ajusta si es necesario */
+  font-style: normal; /* Ajusta si es necesario */
+}
+@font-face {
+  font-family: "Bogart Light"; /* Nombre que usarás para la fuente en el CSS */
+  src: url("/assets/font/bogart/Bogart-Light-trial.ttf") format("truetype");
+  font-weight: normal; /* Ajusta si es necesario */
+  font-style: normal; /* Ajusta si es necesario */
+}
+
+@font-face {
+  font-family: "Bogart"; /* Nombre que usarás en el CSS */
+  src: url("/font/bogart/bogart-bold.woff2") format("woff2"),
+    url("/font/bogart/bogart-bold.woff") format("woff"),
+    url("/font/bogart/Bogart-Bold-trial.ttf") format("truetype");
+  font-weight: bold; /* Ajusta según el peso de la fuente */
+  font-style: normal; /* Ajusta si la fuente es cursiva */
+}
+a {
+  font-family: "Bogart Light", sans-serif; /* Aplica la fuente personalizada a los encabezados */
+  color: white;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+h5 {
+  font-family: "Bogart Light", sans-serif; /* Aplica la fuente personalizada a los encabezados */
+  font-weight: 500;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+span {
+  font-family: "Bogart Light", serif; /* Aplica la fuente personalizada a los encabezados */
+  font-weight: 500;
+  color: white;
+}
+.micontacto {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  text-align: center; /* Centra el contenido */
+}
+
+body {
+  font-family: "Bogart Regular", serif; /* Usa 'Bogart Light' y un respaldo genérico */
+
+  src: url("/font/bogart/bogart-regular.woff2") format("woff2"),
+    url("/font/bogart/bogart-regular.woff") format("woff"),
+    url("/font/bogart/bogart-regular.ttf") format("truetype");
+  font-weight: normal; /* Ajusta según el peso de la fuente */
+  font-style: normal; /* Ajusta si la fuente es cursiva */
+
+  background: rgb(45, 149, 150);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(45, 149, 150, 1) 0%,
+    rgba(38, 80, 115, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(45, 149, 150, 1) 0%,
+    rgba(38, 80, 115, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(45, 149, 150, 1) 0%,
+    rgba(38, 80, 115, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d9596",endColorstr="#265073",GradientType=1);
+}

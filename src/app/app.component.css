@@ -1,0 +1,22 @@
+.navbar-top {
+  background: transparent; /* Fondo transparente por defecto */
+}
+.navbar-top {
+  transition: background 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.navbar-top.scrolled {
+  background: #265073;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+  z-index: 0;
+}
+li > a {
+  font-weight: bold;
+  font-size: large;
+}
