@@ -115,3 +115,51 @@
     margin-top: 10px; /* Espacio superior opcional */
   }
 }
+
+.container2 {
+  overflow: hidden;
+  width: 100%;
+  position: relative; /* Posiciona el contenedor relativamente */
+}
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: #2f1d58;
+  flex-direction: row;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  animation: slide 20s linear infinite;
+}
+
+.images img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.images img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.4);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%); /* Comienza fuera de la pantalla a la derecha */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Termina fuera de la pantalla a la izquierda */
+  }
+}

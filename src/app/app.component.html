@@ -16,7 +16,7 @@
     </button>
     <a class="navbar-brand" href="#"
       ><img
-        src="./assets/img/logo.png"
+        src="./assets/img/logo.svg"
         alt=""
         width="30px"
         style="
@@ -37,7 +37,7 @@
             class="nav-link active"
             aria-current="page"
             style="color: white"
-            href="#"
+            [href]="['#section-nosotros']"
             >Nosotros</a
           >
         </li>
@@ -46,7 +46,7 @@
             class="nav-link active"
             aria-current="page"
             style="color: white"
-            href="#section-servicios"
+            [href]="['#section-servicios']"
             >Servicios</a
           >
         </li>
@@ -54,7 +54,7 @@
           <a
             class="nav-link"
             style="color: white"
-            href="/profesionales"
+            [href]="['/profesionales']"
             aria-current="page"
           >
             Profesionales

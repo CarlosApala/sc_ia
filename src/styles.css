@@ -2,13 +2,13 @@
   --main-background: radial-gradient(
     circle,
     rgba(45, 149, 150, 1) 0%,
-    rgba(38, 80, 115, 1) 100%
+    #265073 100%
   );
   --main-background-inverse: linear-gradient(
     45deg,
     rgba(38, 80, 115, 1) 5%,
     rgba(42, 118, 134, 1) 50%,
-    rgba(38, 80, 115, 1) 95%
+    #265073 95%
   );
 }
 @font-face {
@@ -37,6 +37,10 @@ a {
   color: white;
 }
 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+b {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
