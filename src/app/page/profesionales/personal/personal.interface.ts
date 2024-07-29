@@ -1,4 +1,4 @@
-export interface Contact {
+/* export interface Contact {
   email: string;
   phone: string;
   linkedin: string;
@@ -39,4 +39,16 @@ export interface CV {
   skills: string[];
   certifications: Certification[];
   languages: Language[];
+} */
+
+export interface Person {
+  id: number;
+  nombre: string;
+  apellidos: string;
+  email: string;
+  telefono: string;
+  universidad: string;
+  carrera: string;
+  tecnologias: string;
+  descripcion: string;
 }

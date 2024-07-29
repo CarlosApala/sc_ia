@@ -1,12 +1,15 @@
 <div class="container" style="padding-top: 10vh">
   <header class="text-center mb-4">
     <h1 style="color: white; font-weight: bold">
-      {{ selectedCv?.name }}
+      {{ selectedCv?.nombre }}
     </h1>
     <hr />
-    <p class="lead">
+    <!-- <p class="lead">
       {{ selectedCv?.profile }}
-    </p>
+    </p> -->
+    <h4>
+      {{ selectedCv?.descripcion }}
+    </h4>
   </header>
 
   <section class="contact-info mb-4">
@@ -14,13 +17,13 @@
     <p style="color: white">
       Email:
       <a href="mailto:correo@ejemplo.com" style="color: white">
-        {{ selectedCv?.contact?.email }}</a
+        {{ selectedCv?.email }}</a
       >
     </p>
     <p style="color: white" style="color: white">
-      Teléfono: {{ selectedCv?.contact?.phone }}
+      Teléfono: {{ selectedCv?.telefono }}
     </p>
-    <p style="color: white">
+    <!-- <p style="color: white">
       LinkedIn:
       <a
         href="https://linkedin.com/in/juanperez"
@@ -28,10 +31,10 @@
         style="color: white"
         >{{ selectedCv?.contact?.linkedin }}</a
       >
-    </p>
+    </p> -->
   </section>
 
-  <section class="experience mb-4">
+  <!-- <section class="experience mb-4">
     <h2>Experiencia</h2>
     @for (item of selectedCv?.experience; track $index) {
     <div class="experience-item mb-3">
@@ -47,28 +50,28 @@
       </ul>
     </div>
     }
-  </section>
+  </section> -->
 
   <section class="education mb-4">
     <h2>Educación</h2>
-    <p><strong>Título:</strong> {{ selectedCv?.education?.degree }}</p>
-    <p><strong>Institución:</strong>{{ selectedCv?.education?.institution }}</p>
-    <p>
+    <p><strong>Carrera:</strong> {{ selectedCv?.carrera }}</p>
+    <p><strong>Institución:</strong>{{ selectedCv?.universidad }}</p>
+    <!-- <p>
       <strong>Año de Graduación:</strong>
       {{ selectedCv?.education?.graduationYear }}
-    </p>
+    </p> -->
   </section>
 
-  <section class="skills mb-4">
+  <!-- <section class="skills mb-4">
     <h2>Habilidades</h2>
     <ul class="list-inline">
       @for (item of selectedCv?.skills; track $index) {
       <li class="list-inline-item" style="color: white">{{ item }}</li>
       }
     </ul>
-  </section>
+  </section> -->
 
-  <section class="certifications mb-4">
+  <!-- <section class="certifications mb-4">
     <h2>Certificaciones</h2>
     @for (item of selectedCv?.certifications; track $index) {
     <div class="certification-item mb-3">
@@ -77,15 +80,13 @@
       <p><strong>Año:</strong> {{ item.year }}</p>
     </div>
     }
-  </section>
+  </section> -->
 
   <section class="languages mb-4">
-    <h2>Idiomas</h2>
-    @for (item of selectedCv?.languages; track $index) {
-    <div class="language-item mb-3">
-      <p><strong>Idioma:</strong> {{ item.language }}</p>
-      <p><strong>Nivel:</strong>{{ item.level }}</p>
-    </div>
-    }
+    <h2>Tecnologias:</h2>
+
+    <h5>
+      {{ selectedCv?.tecnologias }}
+    </h5>
   </section>
 </div>

@@ -17,7 +17,14 @@
         <h5>
           {{ pro.degree }}
         </h5>
-        <p style="color: white">
+        <p
+          style="
+            color: white;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+          "
+        >
           {{ pro.description }}
         </p>
         <a
