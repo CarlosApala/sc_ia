@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -94,7 +94,58 @@ export class ProfesionalesComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  private timer = 4000;
+  private i = 0;
+  private max: number | undefined;
 
-  ngOnInit() {}
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+  ngOnInit() {
+    const listItems = this.el.nativeElement.querySelectorAll('#c > li');
+    this.max = listItems.length;
+
+    this.setupInitialStates(listItems);
+    setInterval(() => this.updateStates(listItems), this.timer);
+  }
+
+  private setupInitialStates(listItems: NodeListOf<Element>) {
+    listItems[0].classList.add('active');
+    this.renderer.setStyle(listItems[0], 'left', '0');
+    if (listItems[1]) this.renderer.setStyle(listItems[1], 'left', '25%');
+    if (listItems[2]) this.renderer.setStyle(listItems[2], 'left', '50%');
+    if (listItems[3]) this.renderer.setStyle(listItems[3], 'left', '75%');
+  }
+
+  private updateStates(listItems: NodeListOf<Element>) {
+    listItems.forEach((item) => item.classList.remove('active'));
+
+    if (this.i < this.max! - 4) {
+      this.i += 4;
+    } else {
+      this.i = 0;
+    }
+
+    listItems[this.i].classList.add('active');
+    this.renderer.setStyle(listItems[this.i], 'left', '0');
+    this.renderer.setStyle(listItems[this.i], 'transition-delay', '1.25s');
+
+    if (listItems[this.i + 1]) {
+      this.renderer.setStyle(listItems[this.i + 1], 'left', '25%');
+      this.renderer.setStyle(listItems[this.i + 1], 'transition-delay', '1.5s');
+    }
+
+    if (listItems[this.i + 2]) {
+      this.renderer.setStyle(listItems[this.i + 2], 'left', '50%');
+      this.renderer.setStyle(
+        listItems[this.i + 2],
+        'transition-delay',
+        '1.75s'
+      );
+    }
+
+    if (listItems[this.i + 3]) {
+      this.renderer.setStyle(listItems[this.i + 3], 'left', '75%');
+      this.renderer.setStyle(listItems[this.i + 3], 'transition-delay', '2s');
+    }
+  }
 }

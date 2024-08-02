@@ -163,3 +163,51 @@
     ); /* Termina fuera de la pantalla a la izquierda */
   }
 }
+/* Contenedor principal del slider */
+.slider-container {
+  width: 80vw; /* Ancho del viewport */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Contenedor de las imágenes con animación */
+.slider3 {
+  display: flex;
+
+  width: calc(
+    100% * 2
+  ); /* Asegúrate de que esto sea suficiente para la animación */
+  animation: scroll 20s linear infinite; /* Ajusta la duración según sea necesario */
+}
+
+/* Estilo para las imágenes */
+.slide3 {
+  width: 350px; /* Ajusta el tamaño de los elementos según sea necesario */
+
+  border-radius: 50%; /* Esto recorta el contenedor en un círculo */
+  overflow: hidden; /* Asegura que el contenido dentro del contenedor no se desborde */
+  background: rebeccapurple; /* Fondo del contenedor, si es necesario */
+  display: flex;
+  align-items: center; /* Centra el contenido dentro del contenedor */
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  flex-shrink: 0; /* Evita que los elementos se reduzcan */
+}
+
+.slide3 img {
+  width: 100%; /* Ajusta el ancho de la imagen */
+  height: 100%; /* Ajusta la altura de la imagen para llenar el contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+  border-radius: 50%; /* Esto recorta la imagen en un círculo */
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Ajusta el porcentaje según la longitud total del slider */
+  }
+}

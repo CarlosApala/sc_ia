@@ -18,6 +18,12 @@
   font-style: normal; /* Ajusta si es necesario */
 }
 @font-face {
+  font-family: "MilkyVintage Regular"; /* Nombre de la fuente que usarás en CSS */
+  src: url("/assets/font/bogart/MilkyVintage-Regular.ttf") format("truetype");
+  font-weight: normal; /* Ajusta si es necesario */
+  font-style: normal; /* Ajusta si es necesario */
+}
+@font-face {
   font-family: "Bogart Light"; /* Nombre que usarás para la fuente en el CSS */
   src: url("/assets/font/bogart/Bogart-Light-trial.ttf") format("truetype");
   font-weight: normal; /* Ajusta si es necesario */
@@ -64,7 +70,7 @@ span {
 }
 
 body {
-  font-family: "Bogart Regular", serif; /* Usa 'Bogart Light' y un respaldo genérico */
+  font-family: "MilkyVintage Regular", serif; /* Usa 'Bogart Light' y un respaldo genérico */
 
   src: url("/font/bogart/bogart-regular.woff2") format("woff2"),
     url("/font/bogart/bogart-regular.woff") format("woff"),
@@ -72,21 +78,5 @@ body {
   font-weight: normal; /* Ajusta según el peso de la fuente */
   font-style: normal; /* Ajusta si la fuente es cursiva */
 
-  background: rgb(45, 149, 150);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(45, 149, 150, 1) 0%,
-    rgba(38, 80, 115, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(45, 149, 150, 1) 0%,
-    rgba(38, 80, 115, 1) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(45, 149, 150, 1) 0%,
-    rgba(38, 80, 115, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d9596",endColorstr="#265073",GradientType=1);
+  background: #8eb74f;
 }
