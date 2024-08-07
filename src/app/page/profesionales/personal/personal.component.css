@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -80,4 +81,59 @@ body {
 .certifications h3,
 .languages .language-item p {
   margin: 0;
+}
+
+/* Flexbox para la sección de contacto */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+  gap: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+.contact-image {
+  flex: 1;
+  min-width: 200px; /* Ancho mínimo de la imagen */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.contact-image img {
+  border-radius: 50%; /* Hace la imagen circular */
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  max-width: 200px; /* Máximo ancho de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.contact-info {
+  flex: 2;
+  min-width: 200px; /* Ancho mínimo del contenedor de contacto */
+}
+
+/* Estilos adicionales para los encabezados y secciones */
+h2,
+h4 {
+  margin-bottom: 10px;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+/* Responsive design: Columna única en pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column; /* Cambia a columna cuando la pantalla es pequeña */
+    align-items: center; /* Centra el contenido en pantallas pequeñas */
+  }
+
+  .contact-info,
+  .contact-image {
+    min-width: 100%; /* Asegura que ambos elementos ocupen el ancho completo */
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+
+  .contact-image img {
+    max-width: 150px; /* Ajusta el tamaño máximo de la imagen en pantallas pequeñas */
+  }
 }

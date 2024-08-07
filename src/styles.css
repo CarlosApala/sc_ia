@@ -6,9 +6,9 @@
   );
   --main-background-inverse: linear-gradient(
     45deg,
-    rgba(38, 80, 115, 1) 5%,
-    rgba(42, 118, 134, 1) 50%,
-    #265073 95%
+    rgba(35, 38, 49, 1) 0%,
+    rgba(144, 147, 141, 1) 49%,
+    rgba(35, 38, 49, 1) 100%
   );
 }
 @font-face {
@@ -39,19 +39,19 @@
   font-style: normal; /* Ajusta si la fuente es cursiva */
 }
 a {
-  font-family: "Bogart Light", sans-serif; /* Aplica la fuente personalizada a los encabezados */
+  font-family: "MilkyVintage Regular", sans-serif; /* Aplica la fuente personalizada a los encabezados */
   color: white;
 }
 p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "MilkyVintage Regular", sans-serif;
   color: white;
 }
 b {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "MilkyVintage Regular", sans-serif;
   color: white;
 }
 h5 {
-  font-family: "Bogart Light", sans-serif; /* Aplica la fuente personalizada a los encabezados */
+  font-family: "MilkyVintage Regular", sans-serif; /* Aplica la fuente personalizada a los encabezados */
   font-weight: 500;
   color: white;
 }
@@ -60,7 +60,7 @@ h2,
 h3,
 h4,
 span {
-  font-family: "Bogart Light", serif; /* Aplica la fuente personalizada a los encabezados */
+  font-family: "MilkyVintage Regular", serif; /* Aplica la fuente personalizada a los encabezados */
   font-weight: 500;
   color: white;
 }
@@ -78,5 +78,5 @@ body {
   font-weight: normal; /* Ajusta según el peso de la fuente */
   font-style: normal; /* Ajusta si la fuente es cursiva */
 
-  background: #8eb74f;
+  background: #232631;
 }

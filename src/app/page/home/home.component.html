@@ -35,6 +35,7 @@
         </div>
       </div>
     </div>
+
     <div class="container2" style="width: 100%; height: 7vh; margin-top: 5px">
       <div class="images" style="justify-content: space-between">
         @for (item of listIcon; track $index) {
@@ -162,7 +163,77 @@
       }
     </div>
   </div> -->
-  <div class="slider-container">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    style="background: var(--main-background-inverse); border-radius: 20px"
+  >
+    <div class="carousel-indicators">
+      @for (item of instructores; track $index) {
+      <button
+        type="button"
+        [attr.data-bs-target]="'#carouselExampleIndicators'"
+        [attr.data-bs-slide-to]="$index"
+        [class.active]="$index === 0"
+        [attr.aria-current]="$index === 0 ? 'true' : null"
+        [attr.aria-label]="'Slide ' + ($index + 1)"
+      ></button>
+      }
+    </div>
+    <div class="carousel-inner" style="">
+      @for (item of instructores; track $index) {
+      <div
+        class="carousel-item {{ $index === 0 ? 'active' : '' }} "
+        style="text-align: center"
+      >
+        <img
+          [src]="item.imageUrl"
+          class="card-img-top circular-image"
+          alt="item.name"
+          style="width: 200px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p
+            class="card-text"
+            style="
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            "
+          >
+            {{ item.description }}
+          </p>
+
+          <a href="{{ item.link }}" class="btn btn-primary">Saber mas...</a>
+        </div>
+        <div style="height: 40px"></div>
+
+        <!-- <img [src]="item" style="width: 200px" /> -->
+      </div>
+      }
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- <div class="slider-container">
     <div class="slider3">
       @for (item of infiniteItems; track $index) {
       <div class="slide3">
@@ -170,7 +241,7 @@
       </div>
       }
     </div>
-  </div>
+  </div> -->
 
   <h1 style="text-align: center; padding-top: 10vh" id="section-contacto">
     <b>Contacto</b>
@@ -259,7 +330,7 @@
     </div>
   </section>
 
-  <footer class="footer" style="background: #265073; bottom: 0px; z-index: 999">
+  <footer class="footer" style="background: #232631; bottom: 0px; z-index: 999">
     <div class="container">
       <nav class="pull-left"></nav>
       <div class="social-area pull-right">
@@ -276,7 +347,8 @@
       <div class="copyright text-center" style="color: white">
         &copy;
         <b>2024</b>
-        Creado por el grupo de SC.IA-Ingenieria Aplicada
+        Creado por el Grupo de
+        <a class="btn btn-success" href="/creadores">Ver Mas</a>
       </div>
     </div>
   </footer>

@@ -21,4 +21,11 @@ export const routes: Routes = [
         (m) => m.ProfesionalesComponent
       ),
   },
+  {
+    path: 'creadores',
+    loadComponent: () =>
+      import('./page/creadores/creadores.component').then(
+        (m) => m.CreadoresComponent
+      ),
+  },
 ];

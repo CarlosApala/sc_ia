@@ -51,4 +51,5 @@ export interface Person {
   carrera: string;
   tecnologias: string;
   descripcion: string;
+  image: string;
 }

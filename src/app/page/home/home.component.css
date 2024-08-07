@@ -211,3 +211,11 @@
     ); /* Ajusta el porcentaje según la longitud total del slider */
   }
 }
+
+.circular-image {
+  width: 200px; /* Ancho del contenedor */
+  height: 200px; /* Alto del contenedor */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+}
