@@ -14,6 +14,20 @@ export class PersonalComponent implements OnInit {
   cvData: Person[] = [
     {
       id: 1,
+      nombre: 'David Enrique ',
+      apellidos: 'Mendoza Gutierrez',
+      email: 'David.enrique.mendoza.g@gmail.com',
+      telefono: '60860545',
+      carrera: 'Ingeniero Informatico',
+      descripcion:
+        '• Aprendo rápido, Orden y disciplina en el trabajo, Habilidad para trabajar en equipo, Amable con las personas, Paciente y Responsable, Manejo de Inteligencia emocional',
+      image: 'assets/img/DavidMendoza.jpeg',
+      tecnologias:
+        'Maestría en Seguridad de la Información y Tecnologías de la Información',
+      universidad: 'Universidad Autónoma Gabriel René Moreno',
+    },
+    {
+      id: 2,
       nombre: 'Fabiola',
       apellidos: 'Rojas Janco',
       email: 'rojasjanco85@gmail.com',
@@ -25,7 +39,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/FabiolaRojas.jpeg',
     },
     {
-      id: 2,
+      id: 3,
       nombre: 'Jaime',
       apellidos: 'Quispe Jimenez',
       email: 'jaime.sistemas@gmail.com',
@@ -37,7 +51,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/R.jpg',
     },
     {
-      id: 3,
+      id: 4,
       nombre: 'Alexander',
       apellidos: 'Justiniano Aranibar',
       email: 'yalex4006@gmail.com',
@@ -50,7 +64,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/R.jpg',
     },
     {
-      id: 4,
+      id: 5,
       nombre: 'Jose Julian',
       apellidos: 'Sarabia Roque',
       email: 'josejuliansarabiaroque1@gmail.com',
@@ -62,7 +76,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/R.jpg',
     },
     {
-      id: 5,
+      id: 6,
       nombre: 'Bertho',
       apellidos: 'Barrios Velarde',
       email: 'bbvelarde1991@Gmail.com',
@@ -74,7 +88,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/BertoBarrios.png',
     },
     {
-      id: 6,
+      id: 7,
       nombre: 'Jean Pierre',
       apellidos: 'Guzmán Terrazas',
       email: 'jpgt755@gmail.com',
@@ -88,7 +102,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/R.jpg',
     },
     {
-      id: 7,
+      id: 8,
       nombre: 'Najai',
       apellidos: 'Sossa Bernal',
       email: 'najaisosa123@gmail.com',
@@ -101,7 +115,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/NajaiSossa.jpeg',
     },
     {
-      id: 8,
+      id: 9,
       nombre: 'Carlos Jhordan',
       apellidos: 'Ortega Mamani',
       email: 'ortegajhordan51@gmail.com',
@@ -114,7 +128,7 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/R.jpg',
     },
     {
-      id: 9,
+      id: 10,
       nombre: 'Keneth Sebastian',
       apellidos: 'Ayo Alarcon',
       email: 'kenethayo@gmail.com',
@@ -126,30 +140,16 @@ export class PersonalComponent implements OnInit {
       image: 'assets/img/R.jpg',
     },
     {
-      id: 10,
+      id: 11,
       nombre: 'Jose Carlos',
       apellidos: 'Apala Mamani',
       email: 'josecarlosapalamamani@gmail.com',
       carrera: 'Ingeniera de Sistemas',
-      descripcion: 'Me gustar jugar futbol, e ir a pescar toda la noche',
+      descripcion: 'Me gusta jugar futbol, e ir a pescar toda la noche',
       tecnologias: 'C#, Angular, Flutter, Nestjs, Nodejs, Mysql',
       telefono: '72909736',
       universidad: 'udabol',
       image: 'assets/img/CarlosApala.png',
-    },
-    {
-      id: 11,
-      nombre: 'David Enrique ',
-      apellidos: 'Mendoza Gutierrez',
-      email: 'David.enrique.mendoza.g@gmail.com',
-      telefono: '60860545',
-      carrera: 'Ingeniero Informatico',
-      descripcion:
-        '•	Aprendo rápido,Orden y disciplina en el trabajo,Habilidad para trabajar en equipo,Amable con las personas,Paciente y Responsible,Manejo de Inteligencia emociana',
-      image: 'assets/img/DavidMendoza.jpeg',
-      tecnologias:
-        'Maestría en Seguridad de la Información y Tecnologías de la Información',
-      universidad: 'Universidad Autónoma Gabriel René Moreno',
     },
   ];
 
