@@ -6,6 +6,7 @@ import {
   Renderer2,
 } from '@angular/core';
 import { ProfesionalesComponent } from '../profesionales/profesionales.component';
+import { RouterModule } from '@angular/router';
 declare var $: any;
 
 @Component({
@@ -13,7 +14,7 @@ declare var $: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports: [ProfesionalesComponent],
+  imports: [ProfesionalesComponent, RouterModule],
 })
 export class HomeComponent {
   private navbar!: HTMLElement;
